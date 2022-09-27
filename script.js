@@ -19,11 +19,11 @@ function crossOrCircle(grid) {                                                  
 function change_symbol(n) {                                                             //Picks which image to show depending on the state of clickCounter. 
     console.log(gridArray[n].clickCounter)                                              //Sends url, dimensions and div element clicked to the change_image function
     if (gridArray[n].clickCounter == 1) {                                               //1 is a circle
-          change_image("https://i.imgur.com/s6Xe4Dd.png", 100,100, "O", n)
+          change_image("img/circle100.png", 100,100, "O", n)
     } else if (gridArray[n].clickCounter == 2) {                                        //2 is a cross
-        change_image("https://i.imgur.com/0oWthiX.png", 100,100, "X", n)
+        change_image("img/cross100.png", 100,100, "X", n)
     } else if (gridArray[n].clickCounter == 0) {                                        //0 is an empty field
-      change_image("https://i.imgur.com/i0Yw9Yp.png", 100,100, "empty", n)
+      change_image("img/nothing100.png", 100,100, "empty", n)
     }
 }
 
