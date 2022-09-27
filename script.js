@@ -1,11 +1,11 @@
-const tiles = document.querySelectorAll(".tile");
+const tiles = document.querySelectorAll(".tile");                                       //Defines which divs to listen to 
 
-let gridArray = [
+let gridArray = [                                                                       //a clickCounter for each individual field
     {clickCounter: 0}, {clickCounter: 0}, {clickCounter: 0}, {clickCounter: 0}, {clickCounter: 0}, {clickCounter: 0}, {clickCounter: 0}, {clickCounter: 0}, {clickCounter: 0}]
 
-tiles.forEach(
-  (tileDivElement, i) =>
-  tileDivElement.addEventListener("click", (function(e) {
+tiles.forEach(                                                                          
+  (tileDivElement, i) =>                                                                //Tracks all the tiles and their index (0-8)
+  tileDivElement.addEventListener("click", (function(e) {                               //Tracks which tile has been clicked and returns the index
     crossOrCircle(i)                                                                    //Function that tracks how many times a div has been clicked
     change_symbol(i)                                                                    //Function that changes the symbol picture 
     }))
