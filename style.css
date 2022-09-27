@@ -1,0 +1,12 @@
+.tile {
+    border: 3px brown solid;
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 309px;
+}
